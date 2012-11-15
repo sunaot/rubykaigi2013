@@ -1,0 +1,8 @@
+<h1>Seriously ?</h1>
+
+<ul>
+  <%- %w[alice bob charls].each do |user| %>
+    <li><%= link_to "#{user.capitalize}'s talk.", talk_url(user) %></li>
+  <% end %>
+</ul>
+
