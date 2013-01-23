@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-Hobbykaigi2013::Application.config.session_store :cookie_store, key: '_hobbykaigi2013_session'
+Rubykaigi2013::Application.config.session_store :cookie_store, key: '_hobbykaigi2013_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# Hobbykaigi2013::Application.config.session_store :active_record_store
+# Rubykaigi2013::Application.config.session_store :active_record_store
