@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Rubykaigi2013::Application.load_tasks
+RubyKaigi2013::Application.load_tasks

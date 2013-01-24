@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-Rubykaigi2013::Application.initialize!
+RubyKaigi2013::Application.initialize!
