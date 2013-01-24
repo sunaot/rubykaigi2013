@@ -1,7 +1,7 @@
 development: &development
   adapter: postgresql
   encoding: unicode
-  database: hobbykaigi2013_development
+  database: rubykaigi2013_development
   pool: 5
   username: postgres
   password:
@@ -9,4 +9,4 @@ development: &development
 
 test: &test
   <<: *development
-  database: hobbykaigi2013_test
+  database: rubykaigi2013_test
