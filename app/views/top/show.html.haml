@@ -85,24 +85,9 @@
           Previous
         %div#previous
           %ol
-            %li
-              %a{ href: '/2011' }
-                2011
-            %li
-              %a{ href: '/2010' }
-                2010
-            %li
-              %a{ href: '/2009' }
-                2009
-            %li
-              %a{ href: '/2008' }
-                2008
-            %li
-              %a{ href: '/2007' }
-                2007
-            %li
-              %a{ href: '/2006' }
-                2006
+            - (2006..2011).to_a.reverse.each do |year|
+              %li
+                %a{ href: "/#{year}" }= year
       %p
         Feel free to contact the team via email to 2013 at rubykaigi.org
       %div#socialButtons
