@@ -84,6 +84,8 @@
           Previous
         %div#previous
           %ol
+            %li
+              %a{ href: "/2012" } 2012
             - (2006..2011).to_a.reverse.each do |year|
               %li
                 %a{ href: "/#{year}" }= year
