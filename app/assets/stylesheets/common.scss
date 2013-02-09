@@ -255,12 +255,11 @@ footer {
     }
   }
   #copyright {
-    font-size: $defaultFontSize - 2;
-    text-align: right;
+    font-size: $defaultFontSize - 4;
     color: $gray;
-    line-height: 16px;
-    background: image-url('officialLogo.png') no-repeat right;
-    padding-right: 20px;
+    span {
+      color: $gray;
+    }
   }
 }
 
