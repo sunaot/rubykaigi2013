@@ -1,23 +1,23 @@
 !!!
 %html
   %head
-    %meta{ :charset => 'utf-8' }
+    %meta(charset='utf-8')
     %title RubyKaigi 2013, May 30 - June 1, Tokyo, Japan
-    %meta{ :name => 'ROBOTS', :content => 'NOARCHIVE' }
-    %meta{ :name => 'ROBOTS', :content => 'INDEX,FOLLOW' }
-    %meta{ 'http-equiv' => 'Expires', :content => 'Mon, 04 Dec 1999 21:29:02 GMT' }
-    %meta{ 'http-equiv' => 'Pragma', :content => 'no-cache' }
-    %meta{ 'http-equiv' => 'cache-control', :content => 'no-cache' }
-    %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
-    %meta{ 'property' => 'og:title', :content => 'RubyKaigi 2013' }
-    %meta{ 'property' => 'og:site_name', :content => 'RubyKaigi 2013' }
-    %meta{ 'property' => 'og:url', :content => 'http://rubykaigi.org/2013' }
-    %meta{ 'property' => 'og:type', :content => 'activity' }
-    %meta{ 'property' => 'og:image', :content => 'http://rubykaigi.org' + image_path('ogImage.png') }
-    %meta{ 'property' => 'og:title', :content => 'RubyKaigi 2013' }
+    %meta(name='ROBOTS' content='NOARCHIVE')
+    %meta(name='ROBOTS' content='INDEX,FOLLOW')
+    %meta(http-equiv='Expires'       content='Mon, 04 Dec 1999 21:29:02 GMT')
+    %meta(http-equiv='Pragma'        content='no-cache')
+    %meta(http-equiv='cache-control' content='no-cache')
+    %meta(name='viewport' content='width=device-width, initial-scale=1')
+    %meta(property='og:title'     content='RubyKaigi 2013')
+    %meta(property='og:site_name' content='RubyKaigi 2013')
+    %meta(property='og:url'       content='http://rubykaigi.org/2013')
+    %meta(property='og:type'      content='activity')
+    %meta(property='og:image'     content='#{'http://rubykaigi.org' + image_path('ogImage.png')}')
+    %meta(property='og:title'     content='RubyKaigi 2013')
 
-    %meta{ :name => 'description', :content => 'RubyKaigi 2013 Official Site' }
-    %meta{ :name => 'keywords', :content => 'rubykaigi, ruby会議, 2013' }
+    %meta(name='description' content='RubyKaigi 2013 Official Site')
+    %meta(name='keywords'    content='rubykaigi, ruby会議, 2013')
 
     = javascript_include_tag 'http://html5shiv.googlecode.com/svn/trunk/html5.js'
     = javascript_include_tag 'application'
@@ -38,7 +38,6 @@
   %body
     %div#fb-root
       :javascript
-
         (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
@@ -46,6 +45,7 @@
         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=317794091608525";
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
     %div.gridContainer.clearfix
       %header
         %h1#mainImg
@@ -56,18 +56,18 @@
         %div
           %p
             Prospectus:
-            %a{ href: 'https://dl.dropbox.com/s/3yhh9578lz72yw6/rk13-sponsors-prospectus.pdf', target: '_blank' }
+            %a(href='https://dl.dropbox.com/s/3yhh9578lz72yw6/rk13-sponsors-prospectus.pdf' target='_blank')
               http://goo.gl/UrKpm
           %p
             Application Form:
-            %a{ href: 'https://docs.google.com/a/ruby-no-kai.org/spreadsheet/viewform?formkey=dGxvUkQxQm04MmVicDFEaHppb0diS3c6MQ#gid=0', target: '_blank' }
+            %a(href='https://docs.google.com/a/ruby-no-kai.org/spreadsheet/viewform?formkey=dGxvUkQxQm04MmVicDFEaHppb0diS3c6MQ#gid=0' target='_blank')
               http://goo.gl/u4xc3
         %h2
           Call For Presentation of RubyKaigi 2013!!!!!
         %div
           %p
             Submission Form:
-            %a{ href: 'https://docs.google.com/a/ruby-no-kai.org/spreadsheet/viewform?formkey=dDl6RFI1WWFwZ1dlaTFsNGNzYWdDSHc6MQ', target: '_blank' }
+            %a(href='https://docs.google.com/a/ruby-no-kai.org/spreadsheet/viewform?formkey=dDl6RFI1WWFwZ1dlaTFsNGNzYWdDSHc6MQ' target='_blank')
               http://goo.gl/s6GEQ
           %p
             DEADLINE: 2013-02-20 19:00(JST)
@@ -76,7 +76,7 @@
         %div
           %p
             For Twitter:
-            %a{ href: 'https://twitter.com/#!/search/realtime/%23rubykaigi' }
+            %a(href='https://twitter.com/#!/search/realtime/%23rubykaigi')
               \#rubykaigi
           %p
             For Blogs, Flickr: rubykaigi2013
@@ -84,31 +84,30 @@
           Previous
         %div#previous
           %ol
-            %li
-              %a{ href: "/2012" } 2012
-            - (2006..2011).to_a.reverse.each do |year|
+            - (2006..2012).to_a.reverse.each do |year|
               %li
-                %a{ href: "/#{year}" }= year
+                %a(href="/#{year}")= year
       %p
         Feel free to contact the team via email to 2013 at rubykaigi.org
       %div#socialButtons
-        %a{ href: 'https://twitter.com/share', class: 'twitter-share-button', data: { url: 'http://rubykaigi.org/2013', via: 'rubykaigi', hashtags: 'rubykaigi' } }
+        %a.twitter-share-button{ href: 'https://twitter.com/share', data: { url: 'http://rubykaigi.org/2013', via: 'rubykaigi', hashtags: 'rubykaigi' } }
           Tweet
         :javascript
           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
         %div.fb-like{ data: { href: 'http://rubykaigi.org/2013', send: true, width: '450', show_faces: true } }
   %footer
     %div.gridContainer.clearfix
       %nav
         %ul
           %li
-            %a{ href: 'http://lanyrd.com/2013/rubykaigi/', target: '_blank' }
+            %a(href='http://lanyrd.com/2013/rubykaigi/' target='_blank')
               lanyrd
           %li
-            %a{ href: 'http://blog.rubykaigi.org', target: '_blank' }
+            %a(href='http://blog.rubykaigi.org' target='_blank')
               Blog
           %li
-            %a{ href: 'https://twitter.com/rubykaigi', target: '_blank' }
+            %a(href='https://twitter.com/rubykaigi' target='_blank')
               Twitter
       %aside
         %p#copyright
