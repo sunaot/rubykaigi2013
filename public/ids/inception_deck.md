@@ -35,7 +35,7 @@ RubyKaigiのシーズン1の終了後、日本Rubyの会はRubyKaigiを通して
 
 実行責任者としては、わたくし角谷信太郎が主体となり、体制としては一般社団法人日本Rubyの会の理事・監事を中心として、専門スキルを備えた人たちに直接声をかけて、RubyKaigi 2013 Teamを編成しています。カンファレンスの名称についても、2013年のからは「RubyKaigi」を名乗ります。通称も国内向けの名称もありません。ただ「RubyKaigi」です。これがRubyKaigiのシーズン2です。
 
-("Why Are We Here?"へ続きます)
+(["Why Are We Here?"へ続きます](https://github.com/ruby-no-kai/rubykaigi2013/blob/inceptiondeck-ja/public/ids/why_are_we_here.md))
 
 ## コラム: 地域Ruby会議はどうなるの?
 
