@@ -4,7 +4,7 @@
 
 2枚目のスライドは「The Elevator Pitch」です。ここでは、RubyKaigi シーズン2を2行で説明します。
 
-![](https://raw.github.com/ruby-no-kai/rubykaigi2013/inceptiondeck-ja/app/assets/images/ids/02.evelator_pitch.png)
+![](https://raw.github.com/ruby-no-kai/rubykaigi2013/inceptiondeck-ja/app/assets/images/ids/02.elevator_pitch.png)
 
 (うっ。スライド中のtypoはあとで直します)
 
