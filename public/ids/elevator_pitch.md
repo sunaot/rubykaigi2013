@@ -10,10 +10,12 @@
 
 * RubyKaigiは、全球的Rubyコミュニティ[*]との繋がりを確認したいRubyist向けの準国際的[**]技術カンファレンスです。
 * RubyKaigiでは日本と世界の最強クラスのRubyistのトークを聞いたり交流したりでき、
-* RubyConfとは異なり、**Rubyの話についての圧倒的なクオリティを誇るコンテンツと、(おまえらが)心地良く過ごせる会期中の環境**が備わっています。
+* RubyConfとは異なり、 **Rubyの話についての圧倒的なクオリティを誇るコンテンツと、(おまえらが)心地良く過ごせる会期中の環境**が備わっています。
 
-[*] 全球的Rubyコミュニティ: グローバルにインターネットで接続された"The Ruby Community"のことです
-[**] 準国際的: Official LanguagesがRubyとBroken (English || Japanese)であるため
+## Notes
+
+* [*] 全球的Rubyコミュニティ: グローバルにインターネットで接続された"The Ruby Community"のことです
+* [**] 準国際的: Official LanguagesがRubyとBroken (English || Japanese)であるため
 
 「おまえら」についての説明を省略していますが、ここでの意味合いは「RubyKaigiを楽しみに世界中から集まってくるtribeとしてのRubyist」についての集合的な呼称ということにさせてください。
 
