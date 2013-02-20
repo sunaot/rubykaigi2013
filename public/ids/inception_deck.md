@@ -4,7 +4,7 @@
 2013年5月末に開催するRubyKaigi 2013について、これまでの経緯を知る日本のRubyistに向けての説明が足りていないと感じているので、
 この場を借りてRubyKaigi 2013の開催について補足したいと思います。
 
-![](https://raw.github.com/ruby-no-kai/rubykaigi2013/inceptiondeck-ja/app/assets/images/ids/00.cover.png)
+![](https://raw.github.com/ruby-no-kai/rubykaigi2013/master/app/assets/images/ids/00.cover.png)
 
 なにをベースに説明するのが良いかと少し考えた結果、
 [RubyKaigi 2013のOrganizing Team](lanyrd.com/2013/rubykaigi)を編成するときに使った資料である、
@@ -35,7 +35,7 @@ RubyKaigiのシーズン1の終了後、日本Rubyの会はRubyKaigiを通して
 
 実行責任者としては、わたくし角谷信太郎が主体となり、体制としては一般社団法人日本Rubyの会の理事・監事を中心として、専門スキルを備えた人たちに直接声をかけて、RubyKaigi 2013 Teamを編成しています。カンファレンスの名称についても、2013年のからは「RubyKaigi」を名乗ります。通称も国内向けの名称もありません。ただ「RubyKaigi」です。これがRubyKaigiのシーズン2です。
 
-(["Why Are We Here?"へ続きます](https://github.com/ruby-no-kai/rubykaigi2013/blob/inceptiondeck-ja/public/ids/why_are_we_here.md))
+(["Why Are We Here?"へ続きます](https://github.com/ruby-no-kai/rubykaigi2013/blob/master/public/ids/why_are_we_here.md))
 
 ## コラム: 地域Ruby会議はどうなるの?
 
