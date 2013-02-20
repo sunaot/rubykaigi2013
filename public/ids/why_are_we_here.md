@@ -67,4 +67,4 @@
 
 安易に「過去やっていたこと」を踏襲してしまわないように、誰よりも運営チームがシーズン1のことを忘れるように努めねばならないと思っています。
 
-("The Elevetor Pitch"へと続きます)
+(["The Elevetor Pitch"](https://github.com/ruby-no-kai/rubykaigi2013/blob/inceptiondeck-ja/public/ids/elevator_pitch.md)へと続きます))
