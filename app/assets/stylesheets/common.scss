@@ -191,40 +191,56 @@ header nav {
   margin-bottom: 20px;
 }
 
+.comingSoon {
+  height: 300px;
+}
+
+.contentBg {
+  @include box_shadow(inset 0, 0, 8, rgba($black, 0.2));
+  border-radius: 10px;
+}
+
+#information,
 #content {
-	background: rgba(255,255,255,0.6);
   article {
     padding: 20px;
   }
+  h1,
   h2,
   h3,
   h4 {
     font-weight: 700;
+    text-shadow: 0 0 3px rgba($black, 0.3);
+    margin: 0 0 10px 0;
+  }
+  & > h1 {
+    @extend .contentBg;
+    background: $brightRed;
+    color: $white;
+    padding: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: $defaultFontSize + 10;
   }
   h2 {
-    border-left: 10px solid #edcfd1;
-    padding-left: 6px;
-    font-size: $defaultFontSize + 4;
+    @extend .contentBg;
+    background: $brightGreen;
+    padding: 20px;
+    font-size: $defaultFontSize + 6;
+  }
+  h1,
+  h2{
+    & + article,
+    & + div {
+      @extend .contentBg;
+      background: $paleYellowGreen;
+      padding: 20px;
+      margin: 0 0 30px 0;
+    }
   }
   h3 {
-    font-size: $defaultFontSize + 2;
+    font-size: $defaultFontSize + 4;
   }
-  a:link,
-  a:visited,
-  a:active {
-    color: #293745;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-}
-
-.gridContainer > h1 {
-  color: #fdebe6;
-  background: #ee3706;
-  padding: 20px;
-  margin-bottom: 10px;
-	letter-spacing: 2px;
 }
 
 aside {
@@ -272,21 +288,6 @@ footer {
 /*--- home ----------------------------------------------*/
 
 #information {
-  h2 {
-    @include box_shadow(inset 0, 0, 8, rgba(0, 0, 0, 0.1));
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background: $brightGreen;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0 0 10px 0;
-  }
-  h2 + div {
-    @include box_shadow(inset 0, 0, 8, rgba(0, 0, 0, 0.2));
-    background: $paleYellowGreen;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-  }
   margin-bottom: 20px;
   dl {
     padding: 0;

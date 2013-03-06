@@ -27,13 +27,6 @@ img, object, embed, video {
 	margin: 10px 50px;
 }
 
-#content {
-	clear: both;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
-
 /* タブレットレイアウト : 481 px ～ 768 px。モバイルレイアウトからスタイルを継承。 */
 /*------------------------------------------------------------------------------------------------------------------【２】*/
 
@@ -57,13 +50,6 @@ footer aside {
 	float: right;
 }
 
-#content {
-	clear: both;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
-
 }
 
 /* デスクトップレイアウト : 769 px ～最大 1232 px。モバイルレイアウトとタブレットレイアウトからスタイルを継承。 */
@@ -85,13 +71,6 @@ footer aside {
 
 .btn {
 	margin: 10px 70px;
-}
-
-#content {
-	clear: none;
-	float: left;
-	width: 69.3877%;
-	display: block;
 }
 
 }
