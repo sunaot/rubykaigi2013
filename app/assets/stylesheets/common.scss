@@ -13,14 +13,15 @@ $paleYellowGreen: #f8fee5;
 $softPurple: #bd6ab4;
 $darkPurple: #8e5087;
 
+$white: #fff;
 $gray: #666;
+$black: #000;
 
 /*--- default ----------------------------------------------*/
 
 $defaultFontSize: 16px;
 
 * {
-	color: $brightRed;
 	margin: 0px;
 	padding: 0px;
 	font-weight: normal;
@@ -40,6 +41,7 @@ body {
 	line-height: 150%;
   padding: 50px 0 0 0;
   font-size: $defaultFontSize;
+  color: $gray
 }
 
 a:link,
