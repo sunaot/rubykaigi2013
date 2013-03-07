@@ -12,7 +12,7 @@ img, object, embed, video {
 /*------------------------------------------------------------------------------------------------------------------【１】*/
 
 body {
-  background-position: 0px -270px, top center;
+  background-position: 0px -105px, top center;
 }
 
 header {
@@ -26,6 +26,16 @@ header nav ul li {
 
 header nav ul li a {
   padding: 0;
+}
+
+#mainImg {
+  display: none;
+}
+
+#mainImgMobile {
+  display: block;
+  text-align: center;
+  margin: 10px;
 }
 
 .gridContainer {
@@ -61,6 +71,15 @@ header nav ul li {
   margin: 0 2px;
   display: inline-block;
   width: 45%;
+}
+
+#mainImg {
+  display: block;
+}
+
+#mainImgMobile {
+  display: none;
+  margin: 10px auto;
 }
 
 .gridContainer {
