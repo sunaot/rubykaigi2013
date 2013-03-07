@@ -46,6 +46,15 @@
         }(document, 'script', 'facebook-jssdk'));
 
     %div.gridContainer.clearfix
+      %header
+        %nav
+          %ul
+            %li= link_to 'HOME', root_path
+            %li= link_to 'SCHEDULE', '/2013/schedule'
+            %li= link_to 'FOR ATTENDEES', '/2013/for_attendees'
+            %li= link_to 'GOODIES', '/2013/goodies'
+            %li= link_to 'SPONSORS', '/2013/sponsors'
+            %li= link_to 'TEAM', '/2013/team'
       = yield
 
       %div#socialButtons

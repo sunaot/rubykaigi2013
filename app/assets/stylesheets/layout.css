@@ -11,6 +11,23 @@ img, object, embed, video {
 /* モバイルレイアウト : 480 px およびそれ以下. */
 /*------------------------------------------------------------------------------------------------------------------【１】*/
 
+body {
+  background-position: 0px -270px, top center;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header nav ul li {
+  margin: 4px;
+  display: block;
+}
+
+header nav ul li a {
+  padding: 0;
+}
+
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
@@ -31,7 +48,21 @@ img, object, embed, video {
 /*------------------------------------------------------------------------------------------------------------------【２】*/
 
 @media only screen and (min-width: 481px) {
-	
+
+body {
+  background-position: 0px -375px, top center;
+}
+
+header {
+  margin: 10px 0 30px 0;
+}
+
+header nav ul li {
+  margin: 0 2px;
+  display: inline-block;
+  width: 45%;
+}
+
 .gridContainer {
 	width: 90.675%;
 	padding-left: 1.1625%;
@@ -56,6 +87,19 @@ footer aside {
 /*------------------------------------------------------------------------------------------------------------------【３】*/
 
 @media only screen and (min-width: 769px) {
+
+body {
+  background-position: 0px -435px, top center;
+}
+
+header nav ul li {
+  display: inline-block;
+  width: auto;
+}
+
+header nav ul li a {
+  padding: 0 10px;
+}
 
 .gridContainer {
 	width: 88.2%;
