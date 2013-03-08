@@ -227,7 +227,6 @@ header {
   }
   h2 {
     @extend .contentBg;
-    background: $brightGreen;
     padding: 20px;
     font-size: $defaultFontSize + 6;
   }
@@ -288,10 +287,19 @@ footer {
   clear: both;
 }
 
+#content {
+  h2 {
+    background: $softPurple;
+  }
+}
+
 /*--- home ----------------------------------------------*/
 
 #information {
   margin-bottom: 20px;
+  h2 {
+    background: $brightGreen;
+  }
   dl {
     padding: 0;
   }
