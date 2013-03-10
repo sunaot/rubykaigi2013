@@ -32,7 +32,11 @@ header nav ul li a {
   display: none;
 }
 
-#mainImgMobile {
+#siteTitle {
+  display: none;
+}
+
+#siteTitleMobile {
   display: block;
   text-align: center;
   margin: 10px;
@@ -64,7 +68,7 @@ header nav ul li a {
 @media only screen and (min-width: 481px) {
 
 body {
-  background-position: 0px -375px, top center;
+  background-position: 0px -330px, top center;
 }
 
 header {
@@ -81,9 +85,14 @@ header nav ul li {
   display: block;
 }
 
-#mainImgMobile {
+#siteTitle {
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+
+#siteTitleMobile {
   display: none;
-  margin: 10px auto;
 }
 
 .gridContainer {
@@ -116,7 +125,7 @@ footer aside {
 @media only screen and (min-width: 769px) {
 
 body {
-  background-position: 0px -435px, top center;
+  background-position: 0px -395px, top center;
 }
 
 header nav ul li {
