@@ -245,6 +245,7 @@ ul.listMark {
   h2{
     & + div {
       @extend .contentBg;
+      @include clearfix;
       background: $paleYellowGreen;
       padding: 20px;
       margin: 0 0 30px 0;
