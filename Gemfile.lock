@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rack/rack-contrib.git
+  revision: 6f337267eae0bedb4110879f2aea6b1bb2137980
+  specs:
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -67,8 +74,6 @@ GEM
       i18n (~> 0.6)
       padrino-core (= 0.10.7)
     rack (1.4.5)
-    rack-contrib (1.1.0)
-      rack (>= 0.9.1)
     rack-protection (1.4.0)
       rack
     rack-test (0.6.2)
@@ -103,5 +108,5 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 3.0.12)
-  rack-contrib
+  rack-contrib!
   rb-inotify
