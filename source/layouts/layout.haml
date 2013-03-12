@@ -19,9 +19,12 @@
     %meta(name='description' content='RubyKaigi 2013 Official Site')
     %meta(name='keywords'    content='rubykaigi, ruby会議, 2013')
 
-    = javascript_include_tag 'http://html5shiv.googlecode.com/svn/trunk/html5.js'
+    /[if lt IE 9]
+      = javascript_include_tag 'http://html5shiv.googlecode.com/svn/trunk/html5.js'
+
     = javascript_include_tag 'application'
     = stylesheet_link_tag    'application'
+    = stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Alegreya:400,900,700'
     = favicon_tag            'favicon.png'
 
     :javascript
