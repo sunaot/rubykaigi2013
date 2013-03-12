@@ -99,6 +99,22 @@ ol {
   padding: 20px;
 }
 
+dl {
+  margin-top: 10px;
+  dt {
+    white-space: nowrap;
+    float: left;
+    display: block;
+    clear: both;
+    width: 12em;
+  }
+  dd {
+    margin: 0;
+    float: left;
+    display: block;
+  }
+}
+
 strong {
   font-weight: 700;
 }
@@ -211,7 +227,8 @@ ul.listMark {
 #information,
 #content {
   section {
-    margin-bottom: 10px;
+    @include clearfix;
+    margin-bottom: 20px;
     h1,
     h2 {
       color: $brightRed;
