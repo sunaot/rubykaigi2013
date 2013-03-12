@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Alegreya:400,900,700);
 @import 'bourbon/bourbon';
-@import 'mixin';
 
 /*--- color ----------------------------------------------*/
 
@@ -205,7 +204,7 @@ ul.listMark {
 }
 
 .contentBg {
-  @include box_shadow(inset 0, 0, 8, rgba($black, 0.2));
+  @include box-shadow(0 0 8px rgba($black, 0.2) inset);
   border-radius: 10px;
 }
 
