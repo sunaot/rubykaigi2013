@@ -165,6 +165,13 @@ p.btn {
   }
 }
 
+.photos {
+  text-align: center;
+  img {
+    border: 10px solid lighten($brightGreen, 15%);
+  }
+}
+
 header {
   margin-bottom: 20px;
   nav {
