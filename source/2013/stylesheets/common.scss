@@ -164,10 +164,11 @@ p.btn {
   }
 }
 
-.clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
+.photos {
+  text-align: center;
+  img {
+    border: 10px solid lighten($brightGreen, 15%);
+  }
 }
 
 header {
@@ -326,22 +327,6 @@ footer {
   margin-bottom: 20px;
   h2 {
     background: $brightGreen;
-  }
-  dl {
-    padding: 0;
-  }
-  dt {
-    white-space: nowrap;
-    vertical-align: top;
-    font-weight: 700;
-    color: #eff6f6;
-  }
-  dd {
-    display: inline-block;
-    color: #fcd7cd;
-  }
-  ul li {
-    color: #fcd7cd;
   }
   #previous {
     ol {
