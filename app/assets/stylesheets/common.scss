@@ -17,6 +17,17 @@ $white: #fff;
 $gray: #666;
 $black: #000;
 
+/*--- mixin ----------------------------------------------*/
+
+@mixin setListMark($img) {
+  padding-left: 10px;
+  li {
+    background: image-url($img) top left no-repeat;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+}
+
 /*--- default ----------------------------------------------*/
 
 $defaultFontSize: 16px;
@@ -215,12 +226,11 @@ header {
 }
 
 ul.listMark {
-  padding-left: 10px;
-  li {
-    background: image-url('commonListMarkRed.svg') top left no-repeat;
-    line-height: 30px;
-    padding-left: 30px;
-  }
+  @include setListMark('commonListMarkRed.svg');
+}
+
+ul.listMarkWhite {
+  @include setListMark('commonListMarkWhite.svg');
 }
 
 .contentBg {
