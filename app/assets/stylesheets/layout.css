@@ -54,6 +54,12 @@ header nav ul li a {
 	padding: 4.1666%;
 }
 
+#summary .btn {
+  margin: 10px auto;
+  display: block;
+  width: 100%;
+}
+
 #keynoteSpeakers li,
 #speakers li,
 .teamMembers li {
@@ -112,6 +118,10 @@ footer aside {
 	float: right;
 }
 
+#summary .btn {
+  width: 80%;
+}
+
 #speakers li,
 .teamMembers li {
   width: 50%;
@@ -152,6 +162,16 @@ header nav ul li a {
 
 .wrapper {
 	padding: 0;
+}
+
+#summary .btn {
+  display: inline-block;
+  width: auto;
+  margin: 20px 0 0 0 ;
+}
+
+#summary .btn + .btn {
+  margin-left: 20px;
 }
 
 #keynoteSpeakers li,

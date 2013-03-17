@@ -156,7 +156,6 @@ th {
     border-radius: 4px;
     height: 1.5em;
     line-height: 1.5em;
-    width: 1.5em;
     text-align: center;
     font-size: $defaultFontSize + 4;
   }
@@ -169,7 +168,7 @@ th {
   }
   a:link,
   a:visited {
-	  background: $softPurple;
+	  @include background-image(linear-gradient($softPurple, darken($softPurple, 20%)));
     @include box-shadow(0 0 4px rgba($black, 0.2));
   }
   a:hover,
@@ -218,7 +217,7 @@ header {
 }
 
 #mainImg {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .comingSoon {
@@ -358,6 +357,9 @@ footer {
 .links {
   .btn {
     margin: 5px;
+    a {
+      width: 1.5em;
+    }
   }
 }
 
@@ -379,6 +381,37 @@ footer {
       li:before {
         content: "» ";
       }
+    }
+  }
+}
+
+#summary {
+  @extend .contentBg;
+  background: $brightRed;
+  color: $white;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $white;
+  }
+  .btn {
+    a {
+      padding: 15px;
+      white-space: nowrap;
+    }
+  }
+  .details {
+    border: 1px dotted $white;
+    border-radius: 4px;
+    padding: 20px;
+    @include clearfix;
+    i {
+      display: inline-block;
+      width: 1.5em;
+      text-align: center;
     }
   }
 }
