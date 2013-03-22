@@ -32,6 +32,16 @@ header nav ul li a {
   display: none;
 }
 
+.feature p strong {
+  font-size: 120%;
+}
+
+.feature p {
+  font-size: 90%;
+  line-height: 130%;
+  margin: 10px;
+}
+
 #siteTitle {
   display: none;
 }
@@ -162,6 +172,16 @@ header nav ul li a {
 
 .wrapper {
 	padding: 0;
+}
+
+.feature p strong {
+  font-size: 160%;
+}
+
+.feature p {
+  font-size: 100%;
+  line-height: 140%;
+  margin: 5px;
 }
 
 #summary .btn {
