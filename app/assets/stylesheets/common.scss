@@ -17,6 +17,17 @@ $white: #fff;
 $gray: #666;
 $black: #000;
 
+/*--- mixin ----------------------------------------------*/
+
+@mixin setListMark($img) {
+  padding-left: 10px;
+  li {
+    background: image-url($img) top left no-repeat;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+}
+
 /*--- default ----------------------------------------------*/
 
 $defaultFontSize: 16px;
@@ -121,14 +132,14 @@ strong {
 
 table {
   border-collapse: collapse;
-  border: 1px solid $gray; 
+  border: 1px solid $gray;
 }
 
 table tr,
 table tr th,
 table tr td {
   padding: 10px;
-  border: 1px solid $gray; 
+  border: 1px solid $gray;
   border-collapse: collapse;
 }
 
@@ -138,14 +149,15 @@ th {
 
 /*--- id, class ----------------------------------------------*/
 
-p.btn {
+.btn {
+  display: inline-block;
   a {
     display: block;
-    height: 50px;
-    line-height: 50px;
+    border-radius: 4px;
+    height: 1.5em;
+    line-height: 1.5em;
     text-align: center;
     font-size: $defaultFontSize + 4;
-    font-weight: 700;
   }
   a:link,
   a:visited,
@@ -156,12 +168,13 @@ p.btn {
   }
   a:link,
   a:visited {
-	  background: $softPurple;
+	  @include background-image(linear-gradient($softPurple, darken($softPurple, 20%)));
+    @include box-shadow(0 0 4px rgba($black, 0.2));
   }
   a:hover,
   a:active {
     background: $darkPurple;
-    position:relative;
+    @include box-shadow(0 0 1px rgba($black, 0.2));
   }
 }
 
@@ -204,7 +217,7 @@ header {
 }
 
 #mainImg {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .comingSoon {
@@ -212,12 +225,11 @@ header {
 }
 
 ul.listMark {
-  padding-left: 10px;
-  li {
-    background: image-url('commonListMarkRed.svg') top left no-repeat;
-    line-height: 30px;
-    padding-left: 30px;
-  }
+  @include setListMark('commonListMarkRed.svg');
+}
+
+ul.listMarkWhite {
+  @include setListMark('commonListMarkWhite.svg');
 }
 
 .contentBg {
@@ -322,6 +334,35 @@ footer {
   }
 }
 
+
+.name {
+  font-size: $defaultFontSize + 4;
+  text-transform: capitalize;
+  color: $brightRed;
+}
+
+.role {
+  text-transform: uppercase;
+  font-size: $defaultFontSize - 1;
+  line-height: 120%;
+}
+
+.avatar {
+  img {
+    border: 4px solid lighten($gray, 50%);
+    margin: 10px;
+  }
+}
+
+.links {
+  .btn {
+    margin: 5px;
+    a {
+      width: 1.5em;
+    }
+  }
+}
+
 /*--- home ----------------------------------------------*/
 
 #information {
@@ -353,6 +394,95 @@ footer {
     li {
       margin: 10px;
       display: inline-block;
+    }
+  }
+}
+
+.feature {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: $white;
+  @include box-shadow(0 0 4px rgba($black, 0.2));
+}
+
+.ribbon {
+  position: relative;
+  text-align: center;
+  padding: 1em 2em;
+	@include background-image(linear-gradient(lighten($softPurple, 10%), lighten($softPurple, 2%)));
+}
+
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0.5em;
+  z-index: -1;
+  height: 100%;
+  @include box-shadow(0 0 4px rgba($black, 0.2));
+}
+
+.ribbon:before {
+  left: -0.5em;
+  border-right: 1em solid $darkPurple;
+}
+
+.ribbon:after {
+  right: -0.5em;
+  border-left: 1em solid $darkPurple;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color:  darken($darkPurple, 10%) transparent transparent transparent;
+  bottom: -0.5em;
+}
+
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 0.5em 0 0 0.5em;
+}
+
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 0.5em 0.5em 0 0;
+}
+
+#summary {
+  @extend .contentBg;
+  background: $paleYellowGreen;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  strong {
+    color: $brightRed;
+    font-size: $defaultFontSize + 4;
+    letter-spacing: 1px;
+  }
+  .btn {
+    a {
+      padding: 15px;
+      white-space: nowrap;
+    }
+  }
+  .details {
+    border: 5px solid rgba($brightRed, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    color: $brightRed;
+    p, a {
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    @include clearfix;
+    i {
+      display: inline-block;
+      width: 1.5em;
+      text-align: center;
     }
   }
 }
@@ -405,8 +535,10 @@ footer {
   }
 }
 
-/*--- team ----------------------------------------------*/
+/*--- team, speakers ----------------------------------------------*/
 
+#keynoteSpeakers,
+#speakers,
 .teamMembers {
   margin: 0;
   padding: 0;

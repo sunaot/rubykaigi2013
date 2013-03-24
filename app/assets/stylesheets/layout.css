@@ -32,6 +32,16 @@ header nav ul li a {
   display: none;
 }
 
+.feature p strong {
+  font-size: 120%;
+}
+
+.feature p {
+  font-size: 90%;
+  line-height: 130%;
+  margin: 10px;
+}
+
 #siteTitle {
   display: none;
 }
@@ -54,10 +64,14 @@ header nav ul li a {
 	padding: 4.1666%;
 }
 
-.btn {
-	margin: 10px 50px;
+#summary .btn {
+  margin: 10px auto;
+  display: block;
+  width: 100%;
 }
 
+#keynoteSpeakers li,
+#speakers li,
 .teamMembers li {
   width: 100%;
 }
@@ -110,14 +124,15 @@ header nav ul li {
 	padding: 2.5641%;
 }
 
-.btn {
-	margin: 10px 30px;
-}
-
 footer aside {
 	float: right;
 }
 
+#summary .btn {
+  width: 80%;
+}
+
+#speakers li,
 .teamMembers li {
   width: 50%;
 }
@@ -159,12 +174,33 @@ header nav ul li a {
 	padding: 0;
 }
 
-.btn {
-	margin: 10px 70px;
+.feature p strong {
+  font-size: 160%;
 }
 
+.feature p {
+  font-size: 100%;
+  line-height: 140%;
+  margin: 5px;
+}
+
+#summary .btn {
+  display: inline-block;
+  width: auto;
+  margin: 20px 0 0 0 ;
+}
+
+#summary .btn + .btn {
+  margin-left: 20px;
+}
+
+#keynoteSpeakers li,
 .teamMembers li {
   width: 33.3%;
+}
+
+#speakers li {
+  width: 20%;
 }
 
 .photos img {
