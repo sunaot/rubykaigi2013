@@ -337,7 +337,6 @@ footer {
 
 .name {
   font-size: $defaultFontSize + 4;
-  text-transform: capitalize;
   color: $brightRed;
 }
 
@@ -546,22 +545,5 @@ footer {
     display: inline-block;
     text-align: center;
     margin: 20px 0;
-  }
-  .name {
-    font-size: $defaultFontSize + 4;
-    text-transform: capitalize;
-    color: $brightRed;
-  }
-  .role {
-    text-transform: uppercase;
-    font-size: $defaultFontSize - 1;
-    line-height: 120%;
-  }
-}
-
-.avatar {
-  img {
-    border: 4px solid lighten($gray, 50%);
-    margin: 10px;
   }
 }
