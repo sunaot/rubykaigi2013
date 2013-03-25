@@ -158,6 +158,7 @@ th {
     text-align: center;
     font-size: $defaultFontSize + 4;
   }
+  a,
   a:link,
   a:visited,
   a:hover,
@@ -174,6 +175,17 @@ th {
   a:active {
     background: $darkPurple;
     @include box-shadow(0 0 1px rgba($black, 0.2));
+  }
+}
+
+.btnDisabled {
+  @extend .btn;
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    background: darken($white, 20%);
   }
 }
 
@@ -336,7 +348,6 @@ footer {
 
 .name {
   font-size: $defaultFontSize + 4;
-  text-transform: capitalize;
   color: $brightRed;
 }
 
@@ -354,7 +365,8 @@ footer {
 }
 
 .links {
-  .btn {
+  .btn,
+  .btnDisabled {
     margin: 5px;
     a {
       width: 1.5em;
@@ -545,22 +557,5 @@ footer {
     display: inline-block;
     text-align: center;
     margin: 20px 0;
-  }
-  .name {
-    font-size: $defaultFontSize + 4;
-    text-transform: capitalize;
-    color: $brightRed;
-  }
-  .role {
-    text-transform: uppercase;
-    font-size: $defaultFontSize - 1;
-    line-height: 120%;
-  }
-}
-
-.avatar {
-  img {
-    border: 4px solid lighten($gray, 50%);
-    margin: 10px;
   }
 }
