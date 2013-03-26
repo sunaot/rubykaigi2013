@@ -1,0 +1,5 @@
+- weight_to_size = {4 => '220px', 3 => '180px', 2 => '135px', 1 => '90px'}
+%ul
+  - sponsors.each do |sponsor|
+    %li
+      %p.logo= link_to image_tag(sponsor.logo, alt:sponsor.name, width: weight_to_size[sponsor.weight]), sponsor.link, target: '_blank'
