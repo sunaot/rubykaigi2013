@@ -71,6 +71,7 @@ header nav ul li a {
 }
 
 #keynoteSpeakers li,
+#committers li,
 #speakers li,
 .teamMembers li {
   width: 100%;
@@ -132,6 +133,7 @@ footer aside {
   width: 80%;
 }
 
+#committers li,
 #speakers li,
 .teamMembers li {
   width: 50%;
@@ -199,6 +201,7 @@ header nav ul li a {
   width: 33.3%;
 }
 
+#committers li,
 #speakers li {
   width: 20%;
 }
