@@ -138,7 +138,8 @@ silver_sponsors:
     description:
 
   - name: Everyleaf Corporation
-    logo: sponsorsSilverComingSoon.png
+    logo: sponsorsSilver07.png
     link: 'http://everyleaf.com/'
     weight: 1
-    description:
+    description: |-
+      We develop Rails/smartphone applications for our customers.
