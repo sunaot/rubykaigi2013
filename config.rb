@@ -9,3 +9,9 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash, ignore: [%r{^2013/images/(?:banner|badge)}]
 end
+
+helpers do
+  def schedule_cell(id)
+    partial 'schedule_cell', locals: {session: data.sessions[id.to_s]}
+  end
+end
