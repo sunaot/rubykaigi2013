@@ -14,9 +14,3 @@ data.sessions.keys.each do |id|
   proxy "/2013/session/#{id}.html", '/2013/session.html', locals: {id: id}
 end
 ignore '/2013/session.html'
-
-helpers do
-  def schedule_cell(id)
-    partial 'schedule_cell', locals: {id: id, session: data.sessions[id.to_s]}
-  end
-end
