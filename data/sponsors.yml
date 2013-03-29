@@ -143,3 +143,10 @@ silver_sponsors:
     weight: 1
     description: |-
       We develop Rails/smartphone applications for our customers.
+
+  - name: Rakuten, Inc
+    logo: sponsorsSilver08.png
+    link: 'http://www.rakuten.co.jp'
+    weight: 1
+    description: |-
+      Rakuten, Inc. is one of largest Internet service companies in Japan.
