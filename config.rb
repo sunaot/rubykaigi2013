@@ -14,3 +14,9 @@ data.sessions.keys.each do |id|
   proxy "/2013/session/#{id}.html", '/2013/session.html', locals: {id: id}
 end
 ignore '/2013/session.html'
+
+helpers do
+  def gravatar_tag(id, size, options = {})
+    image_tag("http://www.gravatar.com/avatar/#{id}?s=#{size}&d=http%3A%2F%2Frubykaigi.org%2F2013%2FcommonNoImage.png", {width: size, height: size}.merge(options))
+  end
+end
